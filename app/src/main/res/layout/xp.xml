@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/customborder"
+    android:layout_height="60dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xp"
+        android:text="Hunt XP:"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/xp_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@id/xp"
+        android:text="XP"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/xp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milestone 1"
+        android:id="@+id/milestone1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+        android:textSize="12dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milestone 2"
+        android:id="@+id/milestone2"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/milestone1"
+        android:layout_marginLeft="8dp"
+        android:textSize="12dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/milestone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Milestone 3"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/milestone2"
+        android:visibility="invisible"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milestone 4"
+        android:id="@+id/milestone4"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/milestone3"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retired"
+        android:id="@+id/retired"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/milestone4"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:textSize="12dp"/>
+
+    <Button
+        android:id="@+id/xp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"/>
+</RelativeLayout>

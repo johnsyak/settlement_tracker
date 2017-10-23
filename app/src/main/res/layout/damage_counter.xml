@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_marginLeft ="10dp"
+        android:id="@+id/adjust_damage_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/counter" />
+
+    <ImageView
+        android:id="@+id/damage_box1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/customborder"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignTop="@+id/adjust_damage_counter"
+        android:layout_toEndOf="@+id/adjust_damage_counter"
+        android:layout_marginStart="15dp" />
+
+    <ImageView
+        android:id="@+id/damage_box2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/customborder"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/damage_box1"
+        android:layout_toEndOf="@id/damage_box1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/injured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are injured!"
+        android:layout_alignBottom="@+id/adjust_damage_counter"
+        android:layout_alignStart="@+id/damage_box1" />
+
+    <TextView
+        android:id="@+id/base_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base:"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/injured"
+        android:layout_alignStart="@+id/adjust_damage_counter"
+        android:layout_marginStart="31dp" />
+
+    <EditText
+        android:id="@+id/base_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/base_label"
+        android:layout_alignBottom="@+id/base_label"
+        android:layout_toEndOf="@+id/base_label"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

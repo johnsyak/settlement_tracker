@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/customborder">
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Understanding"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/understanding_level"
+        android:text="LVL"
+        android:layout_alignBottom="@+id/type"
+        android:layout_toEndOf="@+id/type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insight"
+        android:text="Insight"
+        android:textSize="16dp"
+        android:layout_alignStart="@+id/type"
+        android:layout_below="@id/type"
+        android:layout_toEndOf="@id/type"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/white_secret"
+        android:layout_marginLeft="60dp"
+        android:textSize="15dp"
+        android:text="White Secret"
+        android:layout_below="@+id/type"
+        android:layout_toEndOf="@+id/type" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/insight"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background = "@android:color/black"
+        android:id="@+id/line" />
+
+    <CheckBox
+        android:id="@+id/analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line"
+        android:text="Analyze:"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10dp"
+        android:text="Look at top AI card and return it to the top of the deck"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/analyze"
+        android:layout_alignBaseline="@+id/analyze"
+        android:layout_alignBottom="@+id/analyze"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/stalwartText"/>
+
+    <CheckBox
+        android:id="@+id/explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore:"
+        android:textStyle="normal"
+        android:layout_below="@+id/analyze"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10dp"
+        android:text="Add +2 to your investigate roll results"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/explore"
+        android:layout_alignBaseline="@+id/explore"
+        android:layout_alignBottom="@+id/explore"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/tinker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinker:"
+        android:textStyle="normal"
+        android:layout_below="@+id/explore"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10dp"
+        android:text="+1 endeavor when returning a survivor"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tinker"
+        android:layout_alignBaseline="@+id/tinker"
+        android:layout_alignBottom="@+id/tinker"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_understanding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/analyze"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"/>
+
+
+</RelativeLayout>

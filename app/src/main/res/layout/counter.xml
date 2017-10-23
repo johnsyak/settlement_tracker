@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id= "@+id/counter_view"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:adjustViewBounds="true">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOREMIPSUM"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/arrow_left"
+        android:id="@+id/down"
+        android:layout_alignTop="@+id/stat_counter"
+        android:layout_toStartOf="@+id/stat_counter"
+        android:layout_below="@+id/label"/>
+
+    <TextView
+        android:id="@+id/stat_counter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/customborder"
+        android:gravity="center"
+        android:text="T"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/label"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/arrow_right"
+        android:id="@+id/up"
+        android:layout_alignTop="@+id/stat_counter"
+        android:layout_toEndOf="@+id/stat_counter" />
+
+</RelativeLayout>

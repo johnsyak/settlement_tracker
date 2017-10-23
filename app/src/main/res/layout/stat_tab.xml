@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="77dp"
+    android:id="@+id/stat_tab"
+    android:background="@drawable/customborder"
+    >
+
+    <TextView
+        android:text="5"
+        android:textSize="30dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/movement_stat"
+        />
+
+    <TextView
+        android:id="@+id/accuracy_stat"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/movement_stat"
+        android:background="@drawable/customborder"
+        android:text="20" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:id="@+id/strength_stat"
+        android:background="@drawable/customborder"
+        android:layout_alignParentTop="@+id/movement_stat"
+        android:layout_toEndOf="@+id/accuracy_stat"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:id="@+id/evasion_stat"
+        android:layout_toEndOf="@id/strength_stat"
+        android:background="@drawable/customborder"
+        />
+
+    <TextView
+        android:text="0"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:id="@+id/luck_stat"
+        android:layout_toEndOf="@id/evasion_stat"
+        android:background="@drawable/customborder"
+        />
+
+    <TextView
+        android:text="0"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:id="@+id/speed_stat"
+        android:layout_toEndOf="@id/luck_stat"
+        android:background="@drawable/customborder"
+        />
+
+    <TextView
+        android:id="@+id/movement_stat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignStart="@+id/movement_stat"
+        android:layout_below="@+id/accuracy_stat"
+        android:text="Movement"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Accuracy"
+        android:id="@+id/accuracy_stat_label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBaseline="@id/movement_stat_label"
+
+        android:layout_alignStart="@+id/accuracy_stat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Strength"
+        android:id="@+id/strength_stat_label"
+        android:layout_alignBaseline="@id/accuracy_stat_label"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/strength_stat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Evasion"
+        android:paddingLeft="5dp"
+        android:layout_alignBaseline="@id/movement_stat_label"
+        android:id="@+id/eveasion_stat_label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/evasion_stat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Luck"
+        android:paddingLeft="12dp"
+        android:layout_alignBaseline="@id/movement_stat_label"
+        android:id="@+id/luck_stat_label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/luck_stat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Speed"
+        android:paddingLeft="8dp"
+        android:layout_alignBaseline="@id/movement_stat_label"
+        android:id="@+id/speed_stat_label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/speed_stat" />
+</RelativeLayout>

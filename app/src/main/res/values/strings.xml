@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kingdom Death</string>
+    <string name="dialog_create_settlement">Create new settlement?</string>
+    <string name="dialog_cancel_settlement">Cancel</string>
+    <string name="create_settlement">Create</string>string>
+    <string name="settlement_name">Settlement name</string>
+    <string name="del_database">Delete all Data</string>string>
+    <string name="player_name">Character name</string>
+
+</resources>

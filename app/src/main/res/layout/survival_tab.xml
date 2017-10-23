@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.settlement_tracker.MainActivity"
+    android:background="@drawable/customborder">
+
+    <TextView
+        android:id="@+id/survival_stat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:background="@drawable/customborder"
+        android:includeFontPadding="false"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/survival_text"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/survival_stat"
+        android:text="Survival"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/cannot_spend_survival_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cannot Spend Survival"
+        android:layout_toEndOf="@+id/survival_stat"
+        android:layout_below="@+id/survival_text"
+        android:layout_alignBottom="@+id/survival_stat"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/dodge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textSize = "10dp"
+        android:text="Dodge" />
+
+    <TextView
+        android:id="@+id/encourage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/dodge"
+        android:textSize = "10dp"
+        android:text="Encourage" />
+
+    <TextView
+        android:id="@+id/surge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/encourage"
+        android:textSize = "10dp"
+        android:text="Surge" />
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/surge"
+        android:textSize = "10dp"
+        android:text="Dash" />
+
+
+</RelativeLayout>

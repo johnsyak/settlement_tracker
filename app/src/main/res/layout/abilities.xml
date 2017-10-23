@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customborder"
+    android:focusable="true" android:focusableInTouchMode="true"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TYPE"
+        android:layout_margin="5dp"
+        android:id = "@+id/type"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trait1"
+        android:textSize="14dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:maxLength="50"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trait2"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:maxLength="50"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trait3"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:maxLength="50"
+        />
+
+</LinearLayout>

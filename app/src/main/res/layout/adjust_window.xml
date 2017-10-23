@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/adjust_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/movement_counter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            layout="@layout/counter" />
+
+        <include
+            android:id="@+id/accuracy_counter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            layout="@layout/counter" />
+
+        <include
+            android:id="@+id/strength_counter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            layout="@layout/counter" />
+
+        <include
+            android:id="@+id/evasion_counter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            layout="@layout/counter" />
+
+        <include
+            android:id="@+id/luck_counter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            layout="@layout/counter" />
+
+        <include
+            android:id="@+id/speed_counter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            layout="@layout/counter" />
+    </LinearLayout>
+</ScrollView>
