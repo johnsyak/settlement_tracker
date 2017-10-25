@@ -25,11 +25,6 @@
         <activity android:name="com.settlement_tracker.fragments.pages.PlayerFragment"
             android:label="Player Screen"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
